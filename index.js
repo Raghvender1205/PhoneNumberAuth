@@ -6,7 +6,6 @@ require('cors').config();
 const { PORT, MONGODB_URI, NODE_ENV, ORIGIN } = require('./config');
 const { API_ENDPOINT_NOT_FOUND_ERR, SERVER_ERR } = require('./errors');
 const authRoutes = require('./routes/auth.route');
-const { application } = require('express');
 
 const app = express();
 app.use(express.json());

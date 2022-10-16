@@ -45,3 +45,5 @@ headers {
     Authorization: jwt_token
 }
 ```
+
+https://dev.to/harshmangalam/mobile-otp-based-authentication-and-authorization-api-using-nodejs-and-mongodb-2hpk
