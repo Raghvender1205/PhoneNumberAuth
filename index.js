@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const cors = require('cors');
 
@@ -10,6 +11,8 @@ const authRoutes = require('./routes/auth.route');
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json()); // Parse JSON
 app.use(
     cors({
         credentials: true,

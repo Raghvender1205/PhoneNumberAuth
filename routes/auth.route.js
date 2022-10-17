@@ -12,7 +12,7 @@ const {
 } = require('../controllers/auth.controller');
 
 router.post('/register', createNewUser);
-router.post('login', loginWithOTP);
+router.post('/login', loginWithOTP);
 router.post('/verify', verifyOTP);
 
 router.get('/me', checkAuth, fetchCurrUser);
