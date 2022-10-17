@@ -16,6 +16,6 @@ router.post('login', loginWithOTP);
 router.post('/verify', verifyOTP);
 
 router.get('/me', checkAuth, fetchCurrUser);
-router('/admin', checkAuth, checkAdmin, handleAdmin);
+router.get('/admin', checkAuth, checkAdmin, handleAdmin);
 
 module.exports = router;
